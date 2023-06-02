@@ -1,17 +1,23 @@
 export const Animation = () => {
   return (
-    <div className="flex justify-center">
-      <div className="w-full max-w-lg">
-        <div className="relative inline-block before:absolute before:-left-4 before:top-0 before:h-72 before:w-72 before:animate-blob before:rounded-full before:bg-purple-300 before:blur-xl before:filter">
-          <div className="before:animation-delay-2000 relative before:absolute before:-right-4 before:top-0 before:h-72 before:w-72 before:animate-blob before:rounded-full before:bg-pink-300 before:blur-xl before:filter">
-            <div className="before:animation-delay-4000 relative before:absolute before:left-28 before:top-8 before:h-72 before:w-72 before:animate-blob before:rounded-full before:bg-blue-300 before:blur-xl before:filter">
-              <h1 className="relative">
-                A passionate frontend developer who loves turning ideas into
-                captivating digital experiences blending aesthetics with
-                functionality.
-              </h1>
-            </div>
-          </div>
+    <div className="flex flex-col items-center justify-center">
+      <div className="relative z-10 lg:-top-[100px] lg:p-40">
+        <h1>
+          A passionate frontend developer who loves turning ideas into
+          captivating digital experiences.
+        </h1>
+        <p className="mt-10 md:mt-10 lg:mt-10">
+          👋 Hey I&apos;m Laize, a design-focused engineer based in Sydney.
+          I&apos;m currently looking for a new oppportunity to build the
+          next-generation of web based banking tools.
+        </p>
+      </div>
+      <div className="relative -top-[500px] z-0 md:-top-[200px] lg:-top-[480px]">
+        <div className="flex flex-col md:flex-row lg:flex-row">
+          <div className="md:w-42 md:h-42 h-36 w-36 animate-blob rounded-full bg-pink-300 blur-xl filter lg:h-72 lg:w-72"></div>
+          <div className="animation-delay-6000 lg:max-w-72 hidden h-36 w-36 animate-blob rounded-full bg-yellow-300 blur-xl filter md:block md:h-52 md:w-52 lg:block lg:max-h-72"></div>
+          <div className="animation-delay-2000 lg:max-w-72 h-36 w-36 animate-blob rounded-full bg-purple-300 blur-xl filter md:h-52 md:w-52 lg:max-h-72"></div>
+          <div className="animation-delay-4000 lg:max-w-72 h-36 w-36 animate-blob rounded-full bg-blue-300 blur-xl filter md:h-52 md:w-52 lg:max-h-72"></div>
         </div>
       </div>
     </div>
