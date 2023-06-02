@@ -1,3 +1,6 @@
+import Image from 'next/image'
+import ProfilePic from '../../assets/GHProfilePic.jpeg'
+
 const experience: {
   company: string
   role: string
@@ -10,12 +13,12 @@ const experience: {
   },
   {
     company: 'Academy Xi',
-    role: 'Mentor',
+    role: 'Frontend Developer Mentor',
     date: '2022 - 2022',
   },
   {
     company: 'Generation Australia',
-    role: 'Instructor',
+    role: 'Frontend Developer Instructor',
     date: '2020 - 2021',
   },
 ]
@@ -35,7 +38,13 @@ const skills: string[] = [
 export default function Profile() {
   return (
     <main>
-      <section className="py-20">
+      <Image
+        className="mt-10 rounded-full shadow-lg shadow-purple-300 hover:shadow-pink-300"
+        src={ProfilePic}
+        width={100}
+        alt="My profile picture"
+      />
+      <section className="mt-10 pb-20">
         <h1 className="text-4xl font-medium tracking-tighter text-black">
           Profile
         </h1>
