@@ -7,7 +7,7 @@ export default function Home() {
     <>
       <div className="mt-12">
         <Animation />
-        <div className="-mt-[350px] md:-mt-20 lg:-mt-[350px]">
+        <div className="-mt-[350px] md:-mt-20 lg:-mt-[400px]">
           <Link href="/profile">View my profile →</Link>
         </div>
       </div>

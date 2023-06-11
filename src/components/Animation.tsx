@@ -1,7 +1,7 @@
 export const Animation = () => {
   return (
     <div className="flex flex-col items-center justify-center">
-      <div className="relative z-10 lg:-top-[100px] lg:p-40">
+      <div className="relative z-10 lg:-top-16 lg:p-40">
         <h1>
           A passionate frontend developer who loves turning ideas into
           captivating digital experiences.
