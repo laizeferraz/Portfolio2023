@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import ProfilePic from '../../assets/GHProfilePic.jpeg'
+import ProfilePic from '../../../public/images/GHProfilePic.jpeg'
 
 const experience: {
   company: string
