@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export default function Home() {
   return (
-    <>
+    <main className='px-5'>
       <div className="mt-12">
         <Animation />
         <div className="-mt-[350px] md:-mt-20 lg:-mt-[400px]">
@@ -15,6 +15,6 @@ export default function Home() {
         <h2 className="">Projects</h2>
         <ProjectsList />
       </div>
-    </>
+    </main>
   )
 }
