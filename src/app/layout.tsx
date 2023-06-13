@@ -2,6 +2,7 @@ import { ReactNode } from 'react'
 import './globals.css'
 import { Inter, Tenor_Sans as Tenor } from 'next/font/google'
 import { Header } from '@/components/Header'
+import {Social} from '@/components/Social'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 const tenorSans = Tenor({
@@ -23,6 +24,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       >
         <main className="container mx-auto px-5">
           <Header />
+          <Social />
           {children}
         </main>
       </body>
