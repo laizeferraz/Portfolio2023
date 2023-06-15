@@ -37,7 +37,7 @@ export const Header = () => {
             href="/files/ResumeMay23.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="p-2 text-base hover:underline hover:decoration-pink-300/70 hover:decoration-2"
+            className="p-2 text-base hover:underline hover:decoration-green-300/70 hover:decoration-2"
           >
             <li>Resume</li>
           </a>
