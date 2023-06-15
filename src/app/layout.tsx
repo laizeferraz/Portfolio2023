@@ -20,6 +20,9 @@ export const metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
+      <head>
+        <link rel='icon' href='/favicon.svg'/>
+      </head>
       <body
         className={`${inter.variable} ${tenorSans.variable} font-primary `}
       >
