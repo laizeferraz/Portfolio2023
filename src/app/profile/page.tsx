@@ -41,9 +41,9 @@ const skills: string[] = [
 
 export default function Profile() {
   return (
-    <div className='px-5'>
+    <div className="px-5">
       <Image
-        className="rounded-full shadow-lg shadow-purple-300 hover:shadow-pink-300 mt-10"
+        className="mt-10 rounded-full shadow-lg shadow-purple-300 hover:shadow-pink-300"
         src={ProfilePic}
         width={100}
         alt="My profile picture"

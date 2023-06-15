@@ -1,9 +1,9 @@
-import ProjectsList from "@/components/ProjectsList";
+import ProjectsList from '@/components/ProjectsList'
 
 export default function Work() {
-    return (
-        <div className="h-screen">
-            <ProjectsList />
-        </div>
-    )
+  return (
+    <div className="h-screen">
+      <ProjectsList />
+    </div>
+  )
 }

@@ -5,15 +5,17 @@ import { useState } from 'react'
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const close = () => setIsMenuOpen(false);
+  const close = () => setIsMenuOpen(false)
 
   return (
     <header className="mt-5 flex w-full flex-wrap items-center justify-between border-b border-gray-200 py-4">
-      <Link href="/" className="text-xl ml-5 flex items-center">
-        Laize<Braces/>Ferraz
+      <Link href="/" className="ml-5 flex items-center text-xl">
+        Laize
+        <Braces />
+        Ferraz
       </Link>
       <Menu
-        className="block cursor-pointer lg:hidden mr-5"
+        className="mr-5 block cursor-pointer lg:hidden"
         onClick={() => setIsMenuOpen(!isMenuOpen)}
       />
       <nav
@@ -22,7 +24,7 @@ export const Header = () => {
         } w-full justify-end font-medium text-black/90 lg:flex lg:w-auto`}
         onClick={close}
       >
-        <ul className="lg:inline-flex mr-3">
+        <ul className="mr-3 lg:inline-flex">
           <Link
             href="/"
             className="p-2 text-base hover:underline hover:decoration-blue-300/70 hover:decoration-2"
