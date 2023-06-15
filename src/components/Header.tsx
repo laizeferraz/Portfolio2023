@@ -1,6 +1,6 @@
 'use client'
 import Link from 'next/link'
-import { Menu } from 'lucide-react'
+import { Braces, Menu } from 'lucide-react'
 import { useState } from 'react'
 
 export const Header = () => {
@@ -9,8 +9,8 @@ export const Header = () => {
 
   return (
     <header className="mt-5 flex w-full flex-wrap items-center justify-between border-b border-gray-200 py-4">
-      <Link href="/" className="text-xl ml-5">
-        Laize Ferraz
+      <Link href="/" className="text-xl ml-5 flex items-center">
+        Laize<Braces/>Ferraz
       </Link>
       <Menu
         className="block cursor-pointer lg:hidden mr-5"
@@ -40,6 +40,13 @@ export const Header = () => {
             className="p-2 text-base hover:underline hover:decoration-green-300/70 hover:decoration-2"
           >
             <li>Work</li>
+          </Link>
+          <Link
+            href="#contact"
+            scroll={false}
+            className="p-2 text-base hover:underline hover:decoration-gray-300/70 hover:decoration-2"
+          >
+            <li>Contact</li>
           </Link>
           <a
             href="/files/ResumeMay23.pdf"
