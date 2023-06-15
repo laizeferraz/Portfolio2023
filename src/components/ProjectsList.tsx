@@ -16,7 +16,7 @@ export default function Home() {
             />
             <div>
               <p className="mb-4 line-clamp-3">{project.Intro}</p>
-              <Link href="/profile">Read more →</Link>
+              <Link href={`/projects/${project.id}`}>Read more →</Link>
             </div>
           </div>
       ))}
