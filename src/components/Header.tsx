@@ -5,6 +5,7 @@ import { useState } from 'react'
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const close = () => setIsMenuOpen(false);
 
   return (
     <header className="mt-5 flex w-full flex-wrap items-center justify-between border-b border-gray-200 py-4">
@@ -19,6 +20,7 @@ export const Header = () => {
         className={`${
           isMenuOpen ? 'flex' : 'hidden'
         } w-full justify-end font-medium text-black/90 lg:flex lg:w-auto`}
+        onClick={close}
       >
         <ul className="lg:inline-flex mr-3">
           <Link
