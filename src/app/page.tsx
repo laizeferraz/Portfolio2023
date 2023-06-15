@@ -7,13 +7,16 @@ export default function Home() {
     <main className='px-5'>
       <div className="mt-12">
         <Animation />
-        <div className="-mt-[350px] md:-mt-20 lg:-mt-[400px]">
+      </div>
+      <div className="-mt-[350px] md:-mt-20 lg:-mt-[400px]">
+        <div className='mt-10'>
           <Link href="/profile">View my profile →</Link>
         </div>
-      </div>
-      <div className="mt-10">
-        <h2 className="">Projects</h2>
+        <h2 className="mt-10">Projects</h2>
         <ProjectsList />
+        <div className="mt-5">
+          <Link href="/projects">Check my work →</Link>
+        </div>
       </div>
     </main>
   )
