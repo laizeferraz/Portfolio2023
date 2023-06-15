@@ -8,11 +8,11 @@ export const Header = () => {
 
   return (
     <header className="mt-5 flex w-full flex-wrap items-center justify-between border-b border-gray-200 py-4">
-      <Link href="/" className="text-xl">
+      <Link href="/" className="text-xl ml-5">
         Laize Ferraz
       </Link>
       <Menu
-        className="block cursor-pointer lg:hidden"
+        className="block cursor-pointer lg:hidden mr-5"
         onClick={() => setIsMenuOpen(!isMenuOpen)}
       />
       <nav
@@ -20,7 +20,7 @@ export const Header = () => {
           isMenuOpen ? 'flex' : 'hidden'
         } w-full justify-end font-medium text-black/90 lg:flex lg:w-auto`}
       >
-        <ul className="lg:inline-flex">
+        <ul className="lg:inline-flex mr-3">
           <Link
             href="/"
             className="p-2 text-base hover:underline hover:decoration-blue-300/70 hover:decoration-2"
@@ -33,11 +33,17 @@ export const Header = () => {
           >
             <li>Profile</li>
           </Link>
+          <Link
+            href="/projects"
+            className="p-2 text-base hover:underline hover:decoration-green-300/70 hover:decoration-2"
+          >
+            <li>Work</li>
+          </Link>
           <a
             href="/files/ResumeMay23.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="p-2 text-base hover:underline hover:decoration-green-300/70 hover:decoration-2"
+            className="p-2 text-base hover:underline hover:decoration-pink-300/70 hover:decoration-2"
           >
             <li>Resume</li>
           </a>
