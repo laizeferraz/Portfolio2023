@@ -5,21 +5,25 @@ const experience: {
   company: string
   role: string
   date: string
+  website?: string
 }[] = [
   {
     company: 'Palo IT',
     role: 'Software Engineer',
     date: '2021 - 2023',
+    website: 'https://www.palo-it.com/en-au/',
   },
   {
     company: 'Academy Xi',
     role: 'Frontend Developer Mentor',
     date: '2022 - 2022',
+    website: 'https://academyxi.com/',
   },
   {
     company: 'Generation Australia',
     role: 'Frontend Developer Instructor',
     date: '2020 - 2021',
+    website: 'https://australia.generation.org/',
   },
 ]
 
@@ -37,7 +41,7 @@ const skills: string[] = [
 
 export default function Profile() {
   return (
-    <main className='px-5'>
+    <div className='px-5'>
       <Image
         className="rounded-full shadow-lg shadow-purple-300 hover:shadow-pink-300 mt-10"
         src={ProfilePic}
@@ -105,6 +109,7 @@ export default function Profile() {
                     <p className="text-black/50">{exp.role}</p>
                   </h4>
                   <p className="text-black/40">{exp.date}</p>
+                  <p className="text-black/40">{exp.website}</p>
                 </div>
               )
             })}
@@ -139,6 +144,6 @@ export default function Profile() {
           Resume →
         </a>
       </div>
-    </main>
+    </div>
   )
 }
