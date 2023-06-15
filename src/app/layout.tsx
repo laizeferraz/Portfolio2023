@@ -3,6 +3,7 @@ import './globals.css'
 import { Inter, Tenor_Sans as Tenor } from 'next/font/google'
 import { Header } from '@/components/Header'
 import {Social} from '@/components/Social'
+import { Footer } from '@/components/Footer'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 const tenorSans = Tenor({
@@ -20,13 +21,14 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${tenorSans.variable} container mx-auto font-primary `}
+        className={`${inter.variable} ${tenorSans.variable} font-primary `}
       >
+        <Header />
         <main className="container mx-auto px-5">
-          <Header />
           <Social />
           {children}
         </main>
+        <Footer />
       </body>
     </html>
   )
