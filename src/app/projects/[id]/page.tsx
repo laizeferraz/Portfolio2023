@@ -20,10 +20,21 @@ export default function SingleProject() {
             className="rounded object-cover"
           />
           <div>
+            <h1 className="my-5">{project.Title}</h1>
+            <p className="text-sm">
+              <span className="font-bold">Role: </span>
+              {project.Role}
+            </p>
+            <p className="text-sm">
+              <span className="font-bold">Year: </span>
+              {project.Year}
+            </p>
+          </div>
+          <div>
             <p className="mb-4">{project.Intro}</p>
           </div>
           <div>
-            <h3>Key Features and Functionalities</h3>
+            <h3 className="mb-5">Key Features and Functionalities</h3>
             <ul>
               {project.KeyFeaturesAndFunctionality.map((feature) => (
                 <div className="mb-2 flex" key={feature}>
@@ -34,19 +45,19 @@ export default function SingleProject() {
             </ul>
           </div>
           <div>
-            <h3>Frontend Development and Design</h3>
+            <h3 className="mb-5">Frontend Development and Design</h3>
             <p className="whitespace-pre-line">
               {project.FrontendDevelopmentAndDesign}
             </p>
           </div>
           <div>
-            <h3>Backend Technologies and Integration</h3>
+            <h3 className="mb-5">Backend Technologies and Integration</h3>
             <p className="whitespace-pre-line">
               {project.BackendTechnologiesAndIntegration}
             </p>
           </div>
           <div>
-            <h3>Project Management and Collaboration</h3>
+            <h3 className="mb-5">Project Management and Collaboration</h3>
             <p className="whitespace-pre-line">
               {project.ProjectManagementAndCollaboration}
             </p>
@@ -59,7 +70,7 @@ export default function SingleProject() {
             className="rounded object-cover"
           />
           <div>
-            <h3>Conclusion</h3>
+            <h3 className="mb-5">Conclusion</h3>
             <p className="whitespace-pre-line">{project.Conclusion}</p>
           </div>
           <div className="flex items-center justify-center">

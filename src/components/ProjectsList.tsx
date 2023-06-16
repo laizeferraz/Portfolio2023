@@ -18,7 +18,8 @@ export default function Home() {
             className="rounded object-cover"
           />
           <div>
-            <p className="mb-4 line-clamp-3">{project.Intro}</p>
+            <h3>{project.Title}</h3>
+            <p className="my-4 line-clamp-3">{project.Intro}</p>
             <Link href={`/projects/${project.id}`}>Read more →</Link>
           </div>
         </div>
