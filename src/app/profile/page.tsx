@@ -1,11 +1,12 @@
 import Image from 'next/image'
 import ProfilePic from '../../../public/images/GHProfilePic.jpeg'
+import Link from 'next/link'
 
 const experience: {
   company: string
   role: string
   date: string
-  website?: string
+  website: string
 }[] = [
   {
     company: 'Palo IT',
@@ -63,7 +64,7 @@ export default function Profile() {
             Hey there! My name is Laize, and let me take you on a journey
             through my tech-infused life.
             <p className="py-3">
-              Ever since I laid my hands on a 486 computer at the age of 13, I
+              Ever since I laid my hands on a 486 computer at the age of 15, I
               have been captivated by the world of technology. With no
               accessible classes nearby, I taught myself the ins and outs of
               using software computing. Out of curiosity, I took a course in
@@ -109,7 +110,12 @@ export default function Profile() {
                     <p className="text-black/50">{exp.role}</p>
                   </h4>
                   <p className="text-black/40">{exp.date}</p>
-                  <p className="text-black/40">{exp.website}</p>
+                  <Link
+                    href={exp.website}
+                    className="text-black/40 hover:text-black/70"
+                  >
+                    {exp.website}
+                  </Link>
                 </div>
               )
             })}
