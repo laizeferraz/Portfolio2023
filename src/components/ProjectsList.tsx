@@ -1,14 +1,13 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import workProjectList from '../../data/workProjectsList.json'
-import personalProjectList from '../../data/personalProjectsList.json'
+import projectsList from '../../data/projectsList.json'
 
 export default function ProjectsList() {
   return (
     <div>
       <h4 className="mt-10">Work</h4>
       <div className="md:grid md:grid-cols-2 md:gap-4">
-        {workProjectList.map((project) => (
+        {projectsList.projects.work.map((project) => (
           <div
             className="mt-5 grid grid-cols-1 gap-4 lg:grid-cols-2"
             key={project.id}
@@ -30,7 +29,7 @@ export default function ProjectsList() {
       </div>
       <h4 className="mt-10">Personal</h4>
       <div className="md:grid md:grid-cols-2 md:gap-4">
-        {personalProjectList.map((project) => (
+        {projectsList.projects.personal.map((project) => (
           <div
             key={project.id}
             className="mt-5 grid grid-cols-1 gap-4 lg:grid-cols-2"

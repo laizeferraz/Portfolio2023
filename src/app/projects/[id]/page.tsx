@@ -1,6 +1,5 @@
 'use client'
-import workProjectsList from '../../../../data/workProjectsList.json'
-import personalProjectsList from '../../../../data/personalProjectsList.json'
+import projectsList from '../../../../data/projectsList.json'
 import { usePathname } from 'next/navigation'
 import WorkProjectDetails from '@/components/WorkProjectDetails'
 import PersonalProjectDetails from '@/components/PersonalProjectDetails'
@@ -8,10 +7,10 @@ import PersonalProjectDetails from '@/components/PersonalProjectDetails'
 export default function SingleProject() {
   const currentPath = usePathname()
   const id = currentPath.split('/').pop()
-  const selectedWorkProject = workProjectsList.filter(
+  const selectedWorkProject = projectsList.projects.work.filter(
     (project) => project.id === id,
   )
-  const selectedPersonalProject = personalProjectsList.filter(
+  const selectedPersonalProject = projectsList.projects.personal.filter(
     (project) => project.id === id,
   )
   return (

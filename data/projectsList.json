@@ -1,5 +1,71 @@
-[
-    {
+{
+  "projects": {
+    "personal": [
+      {
+        "id": "personalProject1",
+        "Link": "https://letmeask-ecru.vercel.app/",
+        "Title": "Letmeask - Q&A Sessions for Content Creators",
+        "Intro": "Letmeask is a web application designed to facilitate Q&A sessions for content creators. The platform allows creators to open exclusive rooms where their audience can ask questions in an organized and democratic manner. By providing a structured environment, Letmeask enhances the interaction between content creators and their public, fostering engagement and a sense of community.",
+        "ImageIntro": "/images/projects/letmeaskHomePage.png",
+        "ImageConclusion": "/images/projects/letmeaskRoomView.png",
+        "KeyFeatures": [
+          "Exclusive Q&A Rooms: Content creators can open dedicated Q&A rooms for their audience. These rooms provide a focused space for discussion and enable creators to maintain control over the session.",
+          "Question Management: Once questions are posted in a room, the creator has the authority to answer, check, like, or delete them. The comment icon allows the creator to highlight the question being answered, ensuring clarity for both the creator and the audience. If a question is deemed inappropriate or irrelevant, the creator can delete it to maintain the quality of the session.",
+          "Authentication and Access: Users can log in to create a room and share its code with their audience. Alternatively, users can log in and access a specific room by entering its unique code. Participation in the discussion and the ability to like questions requires user login, while anonymous users can still follow the conversation."
+        ],
+        "Technologies": [
+          "Firebase: Leveraging Firebase for authentication and database functionalities, allowing seamless user management and real-time updates.",
+          "React: Built using the React framework for creating dynamic and responsive user interfaces.",
+          "React Hooks: Utilized React Hooks, specifically createContext and useEffect, to manage state and lifecycle functionalities efficiently.",
+          "TypeScript: Employed TypeScript for type safety and enhanced development productivity.",
+          "Sass: Utilized Sass for styling, enabling a modular and scalable approach to UI design."
+        ],
+        "DevelopmentJourney": [
+          "Letmeask was created as a personal project during participation in the Next Level Week event offered by RocketSet, an esteemed Brazilian education platform focused on teaching developers.",
+          "The project was developed with the intention of providing content creators with a simple yet powerful tool to engage with their audience and conduct Q&A sessions in an organized and democratic manner.",
+          "The insights gained from the Next Level Week event and the experience of building Letmeask helped in enhancing development skills and fostering a deeper understanding of web application architecture."
+        ],
+        "Conclusion": [
+          "Letmeask offers content creators a platform to facilitate Q&A sessions with their audience in an organized and democratic way.",
+          "With its exclusive Q&A rooms, question management features, and user-friendly interface, Letmeask empowers creators to interact effectively with their public, fostering engagement and community building.",
+          "Built using Firebase, React, TypeScript, and Sass, Letmeask embodies the spirit of continuous learning and improvement, exemplifying the value of educational events like Next Level Week."
+        ]
+    
+      },
+      {
+        "id": "personalProject2",
+        "Link": "https://letmeask-ecru.vercel.app/",
+        "Title": "Letmeask - Organizing Q&A Sessions for Content Creators",
+        "Intro": "Letmeask is a web application designed to facilitate Q&A sessions for content creators. The platform allows creators to open exclusive rooms where their audience can ask questions in an organized and democratic manner. By providing a structured environment, Letmeask enhances the interaction between content creators and their public, fostering engagement and a sense of community.",
+        "ImageIntro": "/images/projects/letmeaskHomePage.png",
+        "ImageConclusion": "/images/projects/letmeaskRoomView.png",
+        "KeyFeatures": [
+          "Exclusive Q&A Rooms: Content creators can open dedicated Q&A rooms for their audience. These rooms provide a focused space for discussion and enable creators to maintain control over the session.",
+          "Question Management: Once questions are posted in a room, the creator has the authority to answer, check, like, or delete them. The comment icon allows the creator to highlight the question being answered, ensuring clarity for both the creator and the audience. If a question is deemed inappropriate or irrelevant, the creator can delete it to maintain the quality of the session.",
+          "Authentication and Access: Users can log in to create a room and share its code with their audience. Alternatively, users can log in and access a specific room by entering its unique code. Participation in the discussion and the ability to like questions requires user login, while anonymous users can still follow the conversation."
+        ],
+        "Technologies": [
+          "Firebase: Leveraging Firebase for authentication and database functionalities, allowing seamless user management and real-time updates.",
+          "React: Built using the React framework for creating dynamic and responsive user interfaces.",
+          "React Hooks: Utilized React Hooks, specifically createContext and useEffect, to manage state and lifecycle functionalities efficiently.",
+          "TypeScript: Employed TypeScript for type safety and enhanced development productivity.",
+          "Sass: Utilized Sass for styling, enabling a modular and scalable approach to UI design."
+        ],
+        "DevelopmentJourney": [
+          "Letmeask was created as a personal project during participation in the Next Level Week event offered by RocketSet, an esteemed Brazilian education platform focused on teaching developers.",
+          "The project was developed with the intention of providing content creators with a simple yet powerful tool to engage with their audience and conduct Q&A sessions in an organized and democratic manner.",
+          "The insights gained from the Next Level Week event and the experience of building Letmeask helped in enhancing development skills and fostering a deeper understanding of web application architecture."
+        ],
+        "Conclusion": [
+          "Letmeask offers content creators a platform to facilitate Q&A sessions with their audience in an organized and democratic way.",
+          "With its exclusive Q&A rooms, question management features, and user-friendly interface, Letmeask empowers creators to interact effectively with their public, fostering engagement and community building.",
+          "Built using Firebase, React, TypeScript, and Sass, Letmeask embodies the spirit of continuous learning and improvement, exemplifying the value of educational events like Next Level Week."
+        ]
+    
+      }
+    ],
+    "work": [
+      {
         "id": "project1",
         "ImageIntro":"/images/projects/marketPlace.jpg",
         "Title": "Marketplace to Sell NFT Collections",
@@ -18,8 +84,8 @@
         "ProjectManagementAndCollaboration": "Throughout the project, we maintained a flexible project management methodology, employing Scrum as the underlying structure. Jira served as our chosen project management solution, enabling effective monitoring of tasks, fostering team collaboration, and facilitating progress tracking. Furthermore, GitHub functioned as the version control system, guaranteeing smooth code collaboration and systematic versioning.\n\nIn partnership with our design team, we harmonized with the stakeholders to integrate their vision into the user interface of the application. Figma, a potent design tool, streamlined cooperation and secured a unified and aesthetically gratifying design execution.",
         "ImageConclusion":"/images/projects/nft.jpg",
         "Conclusion": "In summary, the Marketplace to Sell NFT Collections is a dynamic and customizable platform enabling exclusive NFT collections to be sold and distributed. With close collaboration between the frontend development and design teams, we successfully transformed creative concepts into a visually stunning user interface. I am happy that I have contributed as a frontend developer to this innovative project, employing robust testing, atomic design principles, and a meticulous development workflow.\n\n\u33B0This application is not online and images are only for ilustration."
-    },
-    {
+      },
+      {
         "id": "project2",
         "ImageIntro":"/images/projects/fearShadow.svg",
         "Title": "Ceta: Facing Fears and Worries",
@@ -36,5 +102,7 @@
         "ProjectManagementAndCollaboration": "We adhered to an agile project management approach throughout the project, utilizing Scrum as the framework. Jira was the project management tool, facilitating efficient task tracking, team collaboration, and progress monitoring. Additionally, Bitbucket was the version control system, ensuring seamless code collaboration and versioning.\n\nCollaborating with the client's internal design team, we incorporated their design vision into the application's user interface. Figma, a powerful design tool, streamlined collaboration and ensured a cohesive and visually pleasing design implementation.",
         "ImageConclusion":"/images/projects/overcomeFear.jpg",
         "Conclusion": "Ceta MVP application is a powerful platform designed to empower children to overcome anxiety. With parents acting as tutors, children engage in modules, activities, and goal-setting exercises to address their fears and worries.\n\nI am proud to have contributed to this impactful project, providing children with a supportive tool to navigate and conquer their anxiety.\n\n\u33B0This product is not online and the images are only for ilustration."
-    }
-]
+      }
+    ]
+  }
+}
