@@ -3,32 +3,34 @@
     "personal": [
       {
         "id": "personalProject1",
-        "Link": "https://letmeask-ecru.vercel.app/",
-        "Title": "Letmeask - Q&A Sessions for Content Creators",
-        "Intro": "Letmeask is a web application designed to facilitate Q&A sessions for content creators. The platform allows creators to open exclusive rooms where their audience can ask questions in an organized and democratic manner. By providing a structured environment, Letmeask enhances the interaction between content creators and their public, fostering engagement and a sense of community.",
-        "ImageIntro": "/images/projects/letmeaskHomePage.png",
-        "ImageConclusion": "/images/projects/letmeaskRoomView.png",
+        "Link": "https://letmeask2-0.vercel.app/",
+        "Title": "Letmeask 2.0 - Q&A Sessions for Content Creators",
+        "Intro": "Letmeask 2.0 is a web application designed to facilitate Q&A sessions for content creators. The platform allows creators to open exclusive rooms where their audience can ask questions in an organized and democratic manner. By providing a structured environment, Letmeask enhances the interaction between content creators and their public, fostering engagement and a sense of community.",
+        "ImageIntro": "/images/projects/letmeaskCover.png",
+        "ImageConclusion": "/images/projects/letmeaskMobile.png",
         "KeyFeatures": [
           "Exclusive Q&A Rooms: Content creators can open dedicated Q&A rooms for their audience. These rooms provide a focused space for discussion and enable creators to maintain control over the session.",
           "Question Management: Once questions are posted in a room, the creator has the authority to answer, check, like, or delete them. The comment icon allows the creator to highlight the question being answered, ensuring clarity for both the creator and the audience. If a question is deemed inappropriate or irrelevant, the creator can delete it to maintain the quality of the session.",
-          "Authentication and Access: Users can log in to create a room and share its code with their audience. Alternatively, users can log in and access a specific room by entering its unique code. Participation in the discussion and the ability to like questions requires user login, while anonymous users can still follow the conversation."
+          "Authentication and Access: Users can log in to create a room and share its code with their audience. Alternatively, users can log in and access a specific room by entering its unique code. Participation in the discussion and the ability to like questions requires user login, while anonymous users can still follow the conversation.",
+          "Users interaction: Users can like questions posted in a room, allowing the creator to identify the most relevant questions. The number of likes is displayed next to each question, providing a clear indication of the audience's interest.",
+          "Room Closure: Once the Q&A session is over, the creator can close the room, preventing further questions from being posted. The room remains accessible for viewing, but no new questions can be submitted."
         ],
         "Technologies": [
           "Firebase: Leveraging Firebase for authentication and database functionalities, allowing seamless user management and real-time updates.",
-          "React: Built using the React framework for creating dynamic and responsive user interfaces.",
-          "React Hooks: Utilized React Hooks, specifically createContext and useEffect, to manage state and lifecycle functionalities efficiently.",
+          "Next.js: The project's implementation on Next.js guarantees efficient server-side rendering and enhanced performance.",
           "TypeScript: Employed TypeScript for type safety and enhanced development productivity.",
-          "Sass: Utilized Sass for styling, enabling a modular and scalable approach to UI design."
+          "TailwindCSS: The application's aesthetic appeal and responsive design are made possible by the versatile styling capabilities of TailwindCSS."
         ],
         "DevelopmentJourney": [
-          "Letmeask was created as a personal project during participation in the Next Level Week event offered by RocketSet, an esteemed Brazilian education platform focused on teaching developers.",
+          "Letmeask was created as a personal project during participation in the Next Level Week event offered by RocketSet in 2021, an esteemed Brazilian education platform focused on teaching developers.",
+          "This year (2023), I decided to recreate the project using more modern technologies such as Next.js and TailwindCSS, enhancing the application's performance and development experience. I also changed the design and created a mobile version to make it responsive.",
           "The project was developed with the intention of providing content creators with a simple yet powerful tool to engage with their audience and conduct Q&A sessions in an organized and democratic manner.",
-          "The insights gained from the Next Level Week event and the experience of building Letmeask helped in enhancing development skills and fostering a deeper understanding of web application architecture."
+          "The insights gained from the Next Level Week event and the experience of building Letmeask for the second time helped in enhancing development skills and fostering a deeper understanding of web application architecture."
         ],
         "Conclusion": [
           "Letmeask offers content creators a platform to facilitate Q&A sessions with their audience in an organized and democratic way.",
           "With its exclusive Q&A rooms, question management features, and user-friendly interface, Letmeask empowers creators to interact effectively with their public, fostering engagement and community building.",
-          "Built using Firebase, React, TypeScript, and Sass, Letmeask embodies the spirit of continuous learning and improvement, exemplifying the value of educational events like Next Level Week."
+          "Built using Firebase, Next.js, TypeScript, and TailwindCSS, Letmeask 2.0 embodies the spirit of continuous learning and improvement, exemplifying the value of educational events like Next Level Week."
         ]
     
       }
