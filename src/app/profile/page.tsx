@@ -143,7 +143,7 @@ export default function Profile() {
       </section>
       <div className="py-10">
         <a
-          href="/files/ResumeMay23.pdf"
+          href="/files/laize-ferraz-resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
         >
