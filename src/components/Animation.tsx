@@ -7,9 +7,9 @@ export const Animation = () => {
           captivating digital experiences.
         </h1>
         <p className="mt-10 md:mt-10 lg:mt-10">
-          👋 Hey I&apos;m Laize, a design-focused engineer based in Sydney.
-          I&apos;m currently looking for a new oppportunity to build the
-          next-generation of web based tools.
+          👋 Hey I&apos;m Laize, a design-focused engineer based in Sunshine
+          Coast, Australia. I&apos;m currently looking for a new oppportunity to
+          build the next-generation of web based tools.
         </p>
       </div>
       <div className="relative -top-[500px] z-0 md:-top-[200px] lg:-top-[480px]">
