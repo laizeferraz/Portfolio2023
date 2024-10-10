@@ -22,7 +22,12 @@ export default function ProjectsList() {
             <div className="flex flex-col justify-start">
               <h3>{project.Title}</h3>
               <p className="my-4 line-clamp-3">{project.Intro}</p>
-              <Link href={`/projects/${project.id}`}>Read more →</Link>
+              <Link
+                className="animate-pulse text-zinc-950"
+                href={`/projects/${project.id}`}
+              >
+                Read more →
+              </Link>
             </div>
           </div>
         ))}
@@ -44,7 +49,12 @@ export default function ProjectsList() {
             <div className="flex flex-col justify-start">
               <h3>{project.Title}</h3>
               <p className="my-4 line-clamp-3">{project.Intro}</p>
-              <Link href={`/projects/${project.id}`}>Read more →</Link>
+              <Link
+                className="animate-pulse text-zinc-950"
+                href={`/projects/${project.id}`}
+              >
+                Read more →
+              </Link>
             </div>
           </div>
         ))}

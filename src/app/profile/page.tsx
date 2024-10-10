@@ -9,6 +9,12 @@ const experience: {
   website: string
 }[] = [
   {
+    company: 'Grok Academy',
+    role: 'Software Engineer',
+    date: '2023 - 2024',
+    website: 'https://groklearning.com/',
+  },
+  {
     company: 'Palo IT',
     role: 'Software Engineer',
     date: '2021 - 2023',
@@ -29,15 +35,18 @@ const experience: {
 ]
 
 const skills: string[] = [
-  'JavaScript',
+  'TypeScript',
   'HTML / CSS',
   'React',
+  'Jest',
   'Bootstrap',
   'Tailwind CSS',
   'Styled Components',
   'Storybook',
   'Next.js',
   'Figma',
+  'Web Components',
+  'LitElement',
 ]
 
 export default function Profile() {
@@ -97,53 +106,50 @@ export default function Profile() {
       </section>
 
       <section className="border-b border-gray-200 py-10">
-        <div className="">
-          <h2 className="mb-4 text-2xl font-medium text-black">Experience</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3">
-            {experience.map((exp) => {
-              return (
-                <div key={exp.company}>
-                  <h4 className="mt-5">
-                    <p className="text-lg font-medium text-black/90">
-                      {exp.company}
-                    </p>
-                    <p className="text-black/50">{exp.role}</p>
-                  </h4>
-                  <p className="text-black/40">{exp.date}</p>
-                  <Link
-                    href={exp.website}
-                    className="text-black/40 hover:text-black/70"
-                  >
-                    {exp.website}
-                  </Link>
-                </div>
-              )
-            })}
-          </div>
+        <h2 className="mb-4 text-2xl font-medium text-black">Experience</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
+          {experience.map((exp) => {
+            return (
+              <div key={exp.company}>
+                <h4 className="mt-5">
+                  <p className="text-lg font-medium text-black/90">
+                    {exp.company}
+                  </p>
+                  <p className="text-black/50">{exp.role}</p>
+                </h4>
+                <p className="text-black/40">{exp.date}</p>
+                <Link
+                  href={exp.website}
+                  className="text-black/40 hover:text-black/70"
+                >
+                  {exp.website}
+                </Link>
+              </div>
+            )
+          })}
         </div>
       </section>
 
       <section className="border-b border-gray-200 py-10">
-        <div className="">
-          <h2 className="mb-4 text-2xl font-medium text-black">
-            Skills & technologies
-          </h2>
-          <div>
-            <ul className="grid grid-cols-1 space-y-2 md:grid-cols-3">
-              {skills.map((skill) => {
-                return (
-                  <li key={skill} className="text-md font-normal text-black/70">
-                    {skill}
-                  </li>
-                )
-              })}
-            </ul>
-          </div>
+        <h2 className="mb-4 text-2xl font-medium text-black">
+          Skills & technologies
+        </h2>
+        <div>
+          <ul className="grid grid-cols-1 space-y-2 md:grid-cols-2 xl:grid-cols-4">
+            {skills.map((skill) => {
+              return (
+                <li key={skill} className="text-md font-normal text-black/70">
+                  {skill}
+                </li>
+              )
+            })}
+          </ul>
         </div>
       </section>
       <div className="py-10">
         <a
-          href="/files/laize-ferraz-resume.pdf"
+          className="animate-pulse text-zinc-950"
+          href="/files/laize-ferraz-cv.pdf"
           target="_blank"
           rel="noopener noreferrer"
         >
