@@ -149,7 +149,7 @@ export default function Profile() {
       <div className="py-10">
         <a
           className="animate-pulse text-zinc-950"
-          href="/files/laize-ferraz-cv.pdf"
+          href="/files/LaizeFerraz-Resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
         >
