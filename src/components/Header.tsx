@@ -43,13 +43,13 @@ export const Header = () => {
           >
             <li>Work</li>
           </Link>
-          <Link
+          {/* Removed temporarily Find a way to make it work for others pages and scrolling to the section. */}
+          {/* <a
             href="#contact"
-            scroll={false}
             className="p-2 text-base hover:underline hover:decoration-gray-300/70 hover:decoration-2"
           >
             <li>Contact</li>
-          </Link>
+          </a> */}
           <a
             href="/files/LaizeFerraz-Resume.pdf"
             target="_blank"
