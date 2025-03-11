@@ -51,7 +51,7 @@ export const Header = () => {
             <li>Contact</li>
           </a> */}
           <a
-            href="/files/LaizeFerraz-Resume.pdf"
+            href="/files/Laize-Ferraz-Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="p-2 text-base hover:underline hover:decoration-pink-300/70 hover:decoration-2"
