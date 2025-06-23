@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { Asterisk, ChevronsRight } from 'lucide-react'
+import { Asterisk } from 'lucide-react'
 
 interface WorkProjectDetailsProps {
   imageIntroSrc: string
@@ -8,9 +8,13 @@ interface WorkProjectDetailsProps {
   year: string
   role: string
   intro: string
+  technologies?: string[]
+  challenges?: string[]
   keyFeaturesAndFunctionality: string[]
-  frontendDevelopmentAndDesign: string
-  backendTechnologiesAndIntegration: string
+  frontendDevelopmentAndDesign?: string
+  roleAndContributions?: string[]
+  backendTechnologiesAndIntegration?: string
+  impactAndOutcomes?: string[]
   projectManagementAndCollaboration: string
   conclusion: string
 }
@@ -21,9 +25,13 @@ export default function WorkProjectDetails({
   title,
   year,
   role,
+  technologies,
+  challenges,
   keyFeaturesAndFunctionality,
   frontendDevelopmentAndDesign,
+  roleAndContributions,
   backendTechnologiesAndIntegration,
+  impactAndOutcomes,
   projectManagementAndCollaboration,
   conclusion,
   intro,
@@ -51,27 +59,78 @@ export default function WorkProjectDetails({
       <div>
         <p className="mb-4">{intro}</p>
       </div>
+      {roleAndContributions && (
+        <div>
+          <h3 className="mb-5">My Role and Contributions</h3>
+          <ul className='list-disc pl-5'>
+            {roleAndContributions.map((contribution) => (
+              <div className="mb-2 flex" key={contribution}>
+                <li>{contribution}</li>
+              </div>
+            ))}
+          </ul>
+        </div>
+      )}
+      { technologies && (
+        <div>
+          <h3 className="mb-5">Technologies</h3>
+          <ul className='list-disc pl-5'>
+            {technologies.map((tech) => (
+              <div className="mb-2 flex" key={tech}>
+                <li>{tech}</li>
+              </div>
+            ))}
+          </ul>
+        </div>
+      )}
+      {challenges && (
+        <div>
+          <h3 className="mb-5">Challenges</h3>
+          <ul className='list-disc pl-5'>
+            {challenges.map((challenge) => (
+              <div className="mb-2 flex" key={challenge}>
+                <li>{challenge}</li>
+              </div>
+            ))}
+          </ul>
+        </div>
+      )}
       <div>
         <h3 className="mb-5">Key Features and Functionalities</h3>
-        <ul>
+        <ul className='list-disc pl-5'>
           {keyFeaturesAndFunctionality.map((feature) => (
             <div className="mb-2 flex" key={feature}>
-              <ChevronsRight />
               <li>{feature}</li>
             </div>
           ))}
         </ul>
       </div>
-      <div>
+      { frontendDevelopmentAndDesign && (
+        <div>
         <h3 className="mb-5">Frontend Development and Design</h3>
         <p className="whitespace-pre-line">{frontendDevelopmentAndDesign}</p>
       </div>
-      <div>
-        <h3 className="mb-5">Backend Technologies and Integration</h3>
-        <p className="whitespace-pre-line">
-          {backendTechnologiesAndIntegration}
-        </p>
-      </div>
+      )}
+      {backendTechnologiesAndIntegration && (
+        <div>
+          <h3 className="mb-5">Backend Technologies and Integration</h3>
+          <p className="whitespace-pre-line">
+            {backendTechnologiesAndIntegration}
+          </p>
+        </div>
+      )}
+      {impactAndOutcomes && (
+        <div className="mb-4">
+          <h3 className="mb-5">Impact and Outcomes</h3>
+          <ul className='list-disc pl-5'>
+            {impactAndOutcomes.map((impact) => (
+              <div className="mb-2 flex" key={impact}>
+                <li>{impact}</li>
+              </div>
+            ))}
+          </ul>
+        </div>
+      )}
       <div>
         <h3 className="mb-5">Project Management and Collaboration</h3>
         <p className="whitespace-pre-line">
