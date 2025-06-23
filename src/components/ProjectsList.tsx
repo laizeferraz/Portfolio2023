@@ -6,7 +6,7 @@ export default function ProjectsList() {
   return (
     <div>
       <h4 className="mt-10">Work</h4>
-      <div className="md:gap-4 xl:flex xl:flex-row">
+      <div className="md:gap-3 lg:flex lg:flex-wrap">
         {projectsList.projects.work.map((project) => (
           <div
             className="mt-5 flex flex-col gap-4 md:max-w-xl lg:max-w-2xl lg:flex-row"
