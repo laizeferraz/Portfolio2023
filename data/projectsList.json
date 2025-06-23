@@ -54,7 +54,8 @@
         "BackendTechnologiesAndIntegration": "The backend of the marketplace application was built using Node.js and C#, providing a robust and scalable foundation. We integrated Vendure, a flexible and customizable e-commerce solution, and Stripe for secure payment management and processing.\n\nTo leverage the power of blockchain technology, we employed Solidity to build smart contracts, facilitating the creation and management of NFTs within the marketplace.",
         "ProjectManagementAndCollaboration": "Throughout the project, we maintained a flexible project management methodology, employing Scrum as the underlying structure. Jira served as our chosen project management solution, enabling effective monitoring of tasks, fostering team collaboration, and facilitating progress tracking. Furthermore, GitHub functioned as the version control system, guaranteeing smooth code collaboration and systematic versioning.\n\nIn partnership with our design team, we harmonized with the stakeholders to integrate their vision into the user interface of the application. Figma, a potent design tool, streamlined cooperation and secured a unified and aesthetically gratifying design execution.",
         "ImageConclusion":"/images/projects/nft.jpg",
-        "Conclusion": "In summary, the Marketplace to Sell NFT Collections is a dynamic and customizable platform enabling exclusive NFT collections to be sold and distributed. With close collaboration between the frontend development and design teams, we successfully transformed creative concepts into a visually stunning user interface. I am happy that I have contributed as a frontend developer to this innovative project, employing robust testing, atomic design principles, and a meticulous development workflow.\n\n\u33B0This application is not online and images are only for ilustration."
+        "Conclusion": "In summary, the Marketplace to Sell NFT Collections is a dynamic and customizable platform enabling exclusive NFT collections to be sold and distributed. With close collaboration between the frontend development and design teams, we successfully transformed creative concepts into a visually stunning user interface. I am happy that I have contributed as a frontend developer to this innovative project, employing robust testing, atomic design principles, and a meticulous development workflow.\n\n\u33B0This application is not online and images are only for ilustration.",
+        "NoDemo": true
       },
       {
         "id": "project2",
@@ -72,7 +73,55 @@
         "BackendTechnologiesAndIntegration": "For deployment, we utilized AWS and specifically leveraged Amplify for seamless integration and scalability. This allowed for a smooth deployment process, ensuring the application was readily available to users.\n\nThe application’s backend was structured using GraphQL, enabling efficient data management and structuring of the database. This facilitated seamless communication between the frontend and backend components, optimizing performance and user experience.\n\nSanity was employed as a content management system to efficiently handle and update module content, providing flexibility and ease of management.",
         "ProjectManagementAndCollaboration": "We adhered to an agile project management approach throughout the project, utilizing Scrum as the framework. Jira was the project management tool, facilitating efficient task tracking, team collaboration, and progress monitoring. Additionally, Bitbucket was the version control system, ensuring seamless code collaboration and versioning.\n\nCollaborating with the client's internal design team, we incorporated their design vision into the application's user interface. Figma, a powerful design tool, streamlined collaboration and ensured a cohesive and visually pleasing design implementation.",
         "ImageConclusion":"/images/projects/overcomeFear.jpg",
-        "Conclusion": "Ceta MVP application is a powerful platform designed to empower children to overcome anxiety. With parents acting as tutors, children engage in modules, activities, and goal-setting exercises to address their fears and worries.\n\nI am proud to have contributed to this impactful project, providing children with a supportive tool to navigate and conquer their anxiety.\n\n\u33B0This product is not online and the images are only for ilustration."
+        "Conclusion": "Ceta MVP application is a powerful platform designed to empower children to overcome anxiety. With parents acting as tutors, children engage in modules, activities, and goal-setting exercises to address their fears and worries.\n\nI am proud to have contributed to this impactful project, providing children with a supportive tool to navigate and conquer their anxiety.\n\n\u33B0This product is not online and the images are only for ilustration.",
+        "NoDemo": true
+      },
+      {
+        "id": "project3",
+        "ImageIntro":"/images/projects/grokAcademy1.png",
+        "Title": "Grok Web Components Library",
+        "Role": "Frontend Engineer",
+        "Year": "2023-2024",
+        "Intro": "This project involved the development and maintenance of a robust Web Components library, forming the foundation of a modern design system for educational content creators. My role focused on expanding the component suite, enhancing documentation, and integrating accessibility features to streamline content development and ensure a consistent, inclusive user experience.",
+        "Link": "https://groklearning.github.io/grok-web-components/",
+        "Technologies": [
+            "Web Components: Developed custom web components using Lit Elements with TypeScript and Styled Components for CSS, ensuring modularity and reusability.",
+            "Storybook: Employed Storybook for component documentation and testing, providing a comprehensive playground for developers.",
+            "JSDocs: Utilized JSDocs for automatic documentation generation, enhancing developer experience and understanding.",
+            "Unit Testing: Open Web Components Testing, Vitest (achieved 100% unit test coverage).",
+            "Accessibility Testing: Integrated automated accessibility tests to ensure compliance with WCAG standards.",
+            "Desing System: Shoelace (as reference for design consistency and UI components)."
+        ],
+        "ChallengesAndSolutions":[
+          "Learning Web Components: Faced the challenge of transitioning from a React-focused background to Web Components and Lit Elements. Overcame this through self-directed learning and hands-on implementation.",
+          "Custom Documentation Generation: In the absence of readily available packages for Web Component documentation within Storybook, I independently developed a custom solution to autogenerate component and type descriptions from JSDocs, significantly improving developer efficiency.",
+          "Monorepo Integration with External Components: Addressed the complex challenge of ensuring custom linting in the main monorepository recognized and validated Web Components developed externally. This required extracting and integrating component details into the linting process, a solution that greatly enhanced code quality and consistency."
+        ],
+        "KeyFeaturesAndFunctionality": [
+            "Custom Web Components: Implemented avatar, chat-bubble, and progress-bar components.",
+            "Automated Storybook Documentation: Developed a bespoke solution for automatic documentation generation from JSDocs.",
+            "Custom Lint Integration: Enabled custom linting recognition for external web components.",
+            "Interactive Storybook Playground: Enhanced user navigation and understanding through detailed FAQs and explanations.",
+            "Automated Accessibility Testing: Integrated automated accessibility tests within Storybook.",
+            "Vision Impairment Simulation: Implemented a Storybook feature to simulate various vision impairments, aiding in inclusive design."
+        ],
+        "RoleAndContributions": [
+          "Component Development: Designed, developed, and maintained new, reusable Web Components using Lit Elements (e.g., avatar, chat-bubble, progress-bar) based on content creator requirements.",
+          "Automated Documentation & DX: Engineered custom solutions for automatic Storybook documentation generation, leveraging JSDocs for component and type descriptions. This significantly improved developer experience and content creator efficiency by providing instant visual previews and clear usage instructions.",
+          "Tooling & Linting Integration: Developed custom code to ensure the project's Web Components, residing outside the main monorepository, were correctly recognized and validated by the existing custom linting system.",
+          "Design System Foundations: Managed and implemented the color palette within the design system's foundational elements.",
+          "User Empowerment & FAQs: Authored comprehensive FAQs and usage guides within Storybook to empower non-technical content creators to effectively navigate the component playground and utilize web component features."
+        ],
+        "ImpactAndOutcomes": [
+          "Increased Efficiency for Content Creators: Content creators, even without frontend expertise, could instantly visualize and integrate components using the Storybook playground, reducing development cycles and improving collaboration.",
+          "Enhanced Maintainability & Usability: Transitioned from scattered, static documentation (e.g., Confluence screenshots) to a dynamic, interactive Storybook playground, vastly improving the discoverability, usability, and maintainability of the component library.",
+          "Improved Collaboration & Agility: Fostered a more dynamic and agile workflow between designers, content creators, and software developers, enabling constant feedback and rapid iteration.",
+          "Elevated Accessibility Standards: Implemented automated accessibility testing and vision impairment simulations, ensuring components were built with inclusivity in mind from the outset.",
+          "High Code Quality: Ensured robust and reliable components through 100% unit test coverage and rigorous PR reviews."
+        ],
+        "ProjectManagementAndCollaboration": "We leveraged Jira for agile sprint planning and task tracking, Confluence for centralized documentation and knowledge sharing, and GitHub for version control, code reviews, and seamless collaboration. Our adoption of Kanban principles further streamlined workflows, ensuring continuous delivery and adaptability. This structured yet agile approach, coupled with strong cross-functional teamwork, was instrumental in translating design visions into high-quality, user-centered products that significantly improved content creation and user experience on the Grok platform.",
+        "Video":"/images/projects/grokAvatar.mp4",
+        "NoDemo": false
       }
     ]
   }

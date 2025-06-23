@@ -23,8 +23,13 @@ export default function SingleProject() {
           year={project.Year}
           role={project.Role}
           intro={project.Intro}
+          link={project.Link}
+          technologies={project.Technologies}
+          challenges={project.ChallengesAndSolutions}
           keyFeaturesAndFunctionality={project.KeyFeaturesAndFunctionality}
+          roleAndContributions={project.RoleAndContributions}
           frontendDevelopmentAndDesign={project.FrontendDevelopmentAndDesign}
+          impactAndOutcomes={project.ImpactAndOutcomes}
           backendTechnologiesAndIntegration={
             project.BackendTechnologiesAndIntegration
           }
@@ -33,6 +38,8 @@ export default function SingleProject() {
           }
           imageConclusionSrc={project.ImageConclusion}
           conclusion={project.Conclusion}
+          video={project.Video}
+          noDemo={project.NoDemo}
         />
       ))}
       {selectedPersonalProject.map((project) => (
