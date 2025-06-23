@@ -142,9 +142,9 @@ export default function WorkProjectDetails({
       {video && (
         <div className="mb-4">
           <h3 className="mb-5">Video Demonstration</h3>
-          <div className="mb-4·flex·items-center">
+          <div className="mb-4 flex items-center">
             <Asterisk height={15} />
-            <p className="flex·items-center·text-[10px]">
+            <p className="flex items-center text-[10px]">
               Click on the
               <Maximize height={15} />
               to play it in fullscreen mode.
