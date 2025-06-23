@@ -23,8 +23,12 @@ export default function SingleProject() {
           year={project.Year}
           role={project.Role}
           intro={project.Intro}
+          technologies={project.Technologies}
+          challenges={project.ChallengesAndSolutions}
           keyFeaturesAndFunctionality={project.KeyFeaturesAndFunctionality}
+          roleAndContributions={project.RoleAndContributions}
           frontendDevelopmentAndDesign={project.FrontendDevelopmentAndDesign}
+          impactAndOutcomes={project.ImpactAndOutcomes}
           backendTechnologiesAndIntegration={
             project.BackendTechnologiesAndIntegration
           }
