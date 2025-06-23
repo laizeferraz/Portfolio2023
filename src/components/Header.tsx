@@ -11,7 +11,7 @@ export const Header = () => {
     <header className="mt-5 flex w-full flex-wrap items-center justify-between border-b border-gray-200 py-4">
       <Link href="/" className="ml-5 flex items-center text-xl">
         Laize
-        <Braces />
+        <Braces color="#E48AEA" />
         Ferraz
       </Link>
       <Menu
