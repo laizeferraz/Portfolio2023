@@ -33,7 +33,7 @@ export default function PersonalProjectDetails({
         height={600}
         className="rounded object-cover"
       />
-      <h1 className="my-5">{title}</h1>
+      <h2 className="my-5">{title}</h2>
       <div className="mb-4 font-bold">
         <Link href={link} className="mb-4 font-bold">
           Click here to see it online

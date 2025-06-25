@@ -53,7 +53,7 @@ export default function WorkProjectDetails({
         className="rounded object-cover"
       />
       <div>
-        <h1 className="my-5">{title}</h1>
+        <h2 className="my-5">{title}</h2>
         <p className="text-sm">
           <span className="font-bold">Role: </span>
           {role}

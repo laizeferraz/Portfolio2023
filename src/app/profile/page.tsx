@@ -59,9 +59,9 @@ export default function Profile() {
         alt="My profile picture"
       />
       <section className="mt-10 pb-20">
-        <h1 className="text-4xl font-medium tracking-tighter text-black">
+        <h2 className="text-4xl font-medium tracking-tighter text-black">
           Profile
-        </h1>
+        </h2>
       </section>
 
       <section className="border-b border-gray-200 pb-10">
