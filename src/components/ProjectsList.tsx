@@ -5,7 +5,7 @@ import projectsList from '../../data/projectsList.json'
 export default function ProjectsList() {
   return (
     <div>
-      <h4 className="mt-10">Work</h4>
+      <h2 className="mt-10 text-xl">Work</h2>
       <div className="md:gap-3 lg:flex lg:flex-wrap">
         {projectsList.projects.work.map((project) => (
           <div
@@ -32,7 +32,7 @@ export default function ProjectsList() {
           </div>
         ))}
       </div>
-      <h4 className="mt-10">Personal</h4>
+      <h2 className="mt-10 text-xl">Personal</h2>
       <div className="md:gap-4 lg:flex-row xl:flex">
         {projectsList.projects.personal.map((project) => (
           <div
