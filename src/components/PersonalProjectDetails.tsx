@@ -42,33 +42,31 @@ export default function PersonalProjectDetails({
       <p className="mb-4">{intro}</p>
       <div>
         <h3 className="mb-5">Key Features</h3>
-        <ul>
+        <ul className="list-disc pl-5">
           {keyFeatures.map((feature) => (
-            <div className="mb-2 flex" key={feature}>
-              <li>{feature}</li>
-            </div>
+            <li className="mb-2" key={feature}>
+              {feature}
+            </li>
           ))}
         </ul>
       </div>
       <div>
         <h3 className="mb-5">Technologies</h3>
-        <ul>
+        <ul className="list-disc pl-5">
           {technologies.map((tech) => (
-            <div className="mb-2 flex" key={tech}>
-              <li>{tech}</li>
-            </div>
+            <li className="mb-2" key={tech}>
+              {tech}
+            </li>
           ))}
         </ul>
       </div>
       <div>
         <h3 className="mb-5">Development Journey</h3>
-        <ul>
-          {developmentJourney.map((item) => (
-            <div className="mb-2 flex" key={item}>
-              <li>{item}</li>
-            </div>
-          ))}
-        </ul>
+        {developmentJourney.map((item) => (
+          <p className="mb-2" key={item}>
+            {item}
+          </p>
+        ))}
       </div>
       <Image
         src={imageConclusionSrc}
@@ -79,13 +77,11 @@ export default function PersonalProjectDetails({
       />
       <div>
         <h3 className="mb-5">Conclusion</h3>
-        <ul>
-          {conclusion.map((item) => (
-            <div className="mb-2 flex" key={item}>
-              <li>{item}</li>
-            </div>
-          ))}
-        </ul>
+        {conclusion.map((item) => (
+          <p className="mb-2" key={item}>
+            {item}
+          </p>
+        ))}
       </div>
     </div>
   )

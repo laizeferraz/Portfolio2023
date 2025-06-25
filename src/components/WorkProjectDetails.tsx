@@ -78,9 +78,9 @@ export default function WorkProjectDetails({
           <h3 className="mb-5">My Role and Contributions</h3>
           <ul className="list-disc pl-5">
             {roleAndContributions.map((contribution) => (
-              <div className="mb-2 flex" key={contribution}>
-                <li>{contribution}</li>
-              </div>
+              <li className="mb-2" key={contribution}>
+                {contribution}
+              </li>
             ))}
           </ul>
         </div>
@@ -90,9 +90,9 @@ export default function WorkProjectDetails({
           <h3 className="mb-5">Technologies</h3>
           <ul className="list-disc pl-5">
             {technologies.map((tech) => (
-              <div className="mb-2 flex" key={tech}>
-                <li>{tech}</li>
-              </div>
+              <li className="mb-2" key={tech}>
+                {tech}
+              </li>
             ))}
           </ul>
         </div>
@@ -102,9 +102,9 @@ export default function WorkProjectDetails({
           <h3 className="mb-5">Challenges</h3>
           <ul className="list-disc pl-5">
             {challenges.map((challenge) => (
-              <div className="mb-2 flex" key={challenge}>
-                <li>{challenge}</li>
-              </div>
+              <li className="mb-2" key={challenge}>
+                {challenge}
+              </li>
             ))}
           </ul>
         </div>
@@ -113,9 +113,9 @@ export default function WorkProjectDetails({
         <h3 className="mb-5">Key Features and Functionalities</h3>
         <ul className="list-disc pl-5">
           {keyFeaturesAndFunctionality.map((feature) => (
-            <div className="mb-2 flex" key={feature}>
-              <li>{feature}</li>
-            </div>
+            <li className="mb-2" key={feature}>
+              {feature}
+            </li>
           ))}
         </ul>
       </div>
@@ -175,9 +175,9 @@ export default function WorkProjectDetails({
           <h3 className="mb-5">Impact and Outcomes</h3>
           <ul className="list-disc pl-5">
             {impactAndOutcomes.map((impact) => (
-              <div className="mb-2 flex" key={impact}>
-                <li>{impact}</li>
-              </div>
+              <li className="mb-2" key={impact}>
+                {impact}
+              </li>
             ))}
           </ul>
         </div>
