@@ -8,6 +8,7 @@ export const Social = () => {
           href="https://www.linkedin.com/in/laize-ferraz/"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="LinkedIn profile"
         >
           <Linkedin className="mb-5" />
         </a>
@@ -15,6 +16,7 @@ export const Social = () => {
           href="https://github.com/laizeferraz"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="GitHub profile"
         >
           <Github />
         </a>
