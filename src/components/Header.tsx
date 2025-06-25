@@ -25,24 +25,34 @@ export const Header = () => {
         onClick={close}
       >
         <ul className="mr-3 lg:inline-flex">
-          <Link
-            href="/"
-            className="p-2 text-base hover:underline hover:decoration-blue-300/70 hover:decoration-2"
-          >
-            <li>Home</li>
-          </Link>
-          <Link
-            href="/profile"
-            className="p-2 text-base hover:underline hover:decoration-purple-300/70 hover:decoration-2"
-          >
-            <li>Profile</li>
-          </Link>
-          <Link
-            href="/projects"
-            className="p-2 text-base hover:underline hover:decoration-green-300/70 hover:decoration-2"
-          >
-            <li>Work</li>
-          </Link>
+          <li>
+            <Link
+              href="/"
+              className="p-2 text-base hover:underline hover:decoration-blue-300/70 hover:decoration-2"
+            >
+              Home
+            </Link>
+          </li>
+
+          <li>
+            <Link
+              href="/profile"
+              className="p-2 text-base hover:underline hover:decoration-purple-300/70 hover:decoration-2"
+            >
+              Profile
+            </Link>
+          </li>
+
+          <li>
+            {' '}
+            <Link
+              href="/projects"
+              className="p-2 text-base hover:underline hover:decoration-green-300/70 hover:decoration-2"
+            >
+              Work
+            </Link>
+          </li>
+
           {/* Removed temporarily Find a way to make it work for others pages and scrolling to the section. */}
           {/* <a
             href="#contact"
@@ -50,14 +60,17 @@ export const Header = () => {
           >
             <li>Contact</li>
           </a> */}
-          <a
-            href="/files/Laize-Ferraz-Resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="p-2 text-base hover:underline hover:decoration-pink-300/70 hover:decoration-2"
-          >
-            <li>Resume</li>
-          </a>
+
+          <li>
+            <a
+              href="/files/Laize-Ferraz-Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 text-base hover:underline hover:decoration-pink-300/70 hover:decoration-2"
+            >
+              Resume
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
