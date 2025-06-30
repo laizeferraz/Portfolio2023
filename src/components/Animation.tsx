@@ -3,13 +3,14 @@ export const Animation = () => {
     <div className="flex flex-col items-center justify-center">
       <div className="relative z-10 lg:-top-16 lg:p-40">
         <h1>
-          A passionate frontend developer who loves turning ideas into
+          A passionate software engineer who loves turning ideas into
           captivating digital experiences.
         </h1>
         <p className="mt-10 md:mt-10 lg:mt-10">
-          👋 Hey I&apos;m Laize, a design-focused engineer based in Sunshine
-          Coast, Australia. I&apos;m currently looking for a new oppportunity to
-          build the next-generation of web based tools.
+          👋 Hey I&apos;m Laize - a frontend engineer crafting modern,
+          user-focused web experiences from sunny Australia. I&apos;m on the
+          lookout for my next opportunity to help build the next generation of
+          powerful, intuitive digital tools.
         </p>
       </div>
       <div className="relative -top-[500px] z-0 md:-top-[200px] lg:-top-[480px]">
