@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import { Moon, Sun } from 'lucide-react'
 
 export const DarkModeToggle = () => {
   const [isDarkMode, setIsDarkMode] = useState(false)
@@ -33,7 +34,7 @@ export const DarkModeToggle = () => {
       onClick={toggleDarkMode}
       className="p-2 text-sm font-medium text-gray-800 dark:text-gray-200"
     >
-      {isDarkMode ? 'Light Mode' : 'Dark Mode'}
+      {isDarkMode ? <Sun /> : <Moon />}
     </button>
   )
 }

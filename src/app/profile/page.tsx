@@ -53,23 +53,23 @@ export default function Profile() {
   return (
     <div className="px-5">
       <Image
-        className="mt-10 rounded-full shadow-lg shadow-purple-300 hover:shadow-pink-300"
+        className="mt-10 rounded-full shadow-lg shadow-purple-300 hover:shadow-pink-300 dark:shadow-purple-800 dark:hover:shadow-pink-800"
         src={ProfilePic}
         width={100}
         alt="My profile picture"
       />
       <section className="mt-10 pb-20">
-        <h2 className="text-4xl font-medium tracking-tighter text-black">
+        <h2 className="text-4xl font-medium tracking-tighter text-black dark:text-zinc-200">
           Profile
         </h2>
       </section>
 
       <section className="border-b border-gray-200 pb-10">
         <div>
-          <h2 className="mb-4 text-2xl font-medium text-black">
+          <h2 className="mb-4 text-2xl font-medium text-black dark:text-zinc-200">
             How I got here
           </h2>
-          <article>
+          <article className="dark:text-zinc-200">
             Hey there! My name is Laize, and let me take you on a journey
             through my tech-infused life.
             <p className="py-3">
@@ -106,21 +106,23 @@ export default function Profile() {
       </section>
 
       <section className="border-b border-gray-200 py-10">
-        <h2 className="mb-4 text-2xl font-medium text-black">Experience</h2>
+        <h2 className="mb-4 text-2xl font-medium text-black dark:text-zinc-200">
+          Experience
+        </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
           {experience.map((exp) => {
             return (
               <div key={exp.company}>
                 <h4 className="mt-5">
-                  <p className="text-lg font-medium text-black/90">
+                  <p className="text-lg font-medium text-black/90 dark:text-zinc-200">
                     {exp.company}
                   </p>
-                  <p className="text-black/50">{exp.role}</p>
+                  <p className="text-black/50 dark:text-zinc-500">{exp.role}</p>
                 </h4>
-                <p className="text-black/40">{exp.date}</p>
+                <p className="text-black/40 dark:text-zinc-500">{exp.date}</p>
                 <Link
                   href={exp.website}
-                  className="text-black/40 hover:text-black/70"
+                  className="text-black/40 hover:text-black/70 dark:text-zinc-500 dark:hover:text-zinc-300"
                 >
                   {exp.website}
                 </Link>
@@ -131,14 +133,17 @@ export default function Profile() {
       </section>
 
       <section className="border-b border-gray-200 py-10">
-        <h2 className="mb-4 text-2xl font-medium text-black">
+        <h2 className="mb-4 text-2xl font-medium text-black dark:text-zinc-200">
           Skills & technologies
         </h2>
         <div>
           <ul className="grid grid-cols-1 space-y-2 md:grid-cols-2 xl:grid-cols-4">
             {skills.map((skill) => {
               return (
-                <li key={skill} className="text-md font-normal text-black/70">
+                <li
+                  key={skill}
+                  className="text-md font-normal text-black/70 dark:text-zinc-400"
+                >
                   {skill}
                 </li>
               )
@@ -148,7 +153,7 @@ export default function Profile() {
       </section>
       <div className="py-10">
         <a
-          className="animate-pulse text-zinc-950"
+          className="animate-pulse text-zinc-950 hover:underline dark:text-zinc-200"
           href="/files/LaizeFerraz-Resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
