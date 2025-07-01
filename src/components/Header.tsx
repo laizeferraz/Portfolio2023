@@ -65,7 +65,7 @@ export const Header = () => {
 
             <li>
               <a
-                href="/files/Laize-Ferraz-Resume.pdf"
+                href="/files/Resume-LaizeFerraz.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 text-base hover:underline hover:decoration-pink-300/70 hover:decoration-2 dark:hover:decoration-pink-500"
