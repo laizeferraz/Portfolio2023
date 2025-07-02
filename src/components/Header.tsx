@@ -6,6 +6,10 @@ import { DarkModeToggle } from '@/components/DarkModeToggle'
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  // const toggleMenu = ( )=> {
+  //   console.log('Menu toggled')
+  //   setIsMenuOpen(!isMenuOpen)
+  // }
   const close = () => setIsMenuOpen(false)
 
   return (
@@ -15,18 +19,20 @@ export const Header = () => {
         <Braces color="#E48AEA" />
         Ferraz
       </Link>
-      <div className="flex flex-col items-start lg:flex-row lg:items-center">
-        <Menu
+      <div className="flex flex-col items-end lg:flex-row lg:items-center">
+        <button
           className="mr-5 block cursor-pointer lg:hidden"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-        />
+        >
+          <Menu />
+        </button>
         <nav
           className={`${
-            isMenuOpen ? 'flex' : 'hidden'
-          } w-full justify-end font-medium text-black/90 dark:text-zinc-200 lg:flex lg:w-auto`}
+            isMenuOpen ? 'starting:open:opacity-0 block opacity-100' : 'hidden'
+          } transition-discrete flex w-full justify-end font-medium text-black/90 transition-all dark:text-zinc-200 lg:flex lg:w-auto`}
           onClick={close}
         >
-          <ul className="mr-3 flex flex-col dark:text-zinc-200 lg:flex-row lg:items-center lg:space-x-4">
+          <ul className="mr-3 flex flex-col items-end gap-2 dark:text-zinc-200 lg:flex-row lg:items-center lg:space-x-4">
             <li>
               <Link
                 href="/"
