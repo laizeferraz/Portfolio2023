@@ -19,10 +19,10 @@ export const Header = () => {
         <Braces color="#E48AEA" />
         Ferraz
       </Link>
-      <div className="hidden relative sm:flex flex-col justify-center">
+      <div className="relative hidden flex-col justify-center sm:flex">
         <DesktopNavbar />
       </div>
-      <div className="sm:hidden relative flex flex-row">
+      <div className="relative flex flex-row sm:hidden">
         <button
           className="mr-5 block cursor-pointer"
           onClick={handleMenuToggle}

@@ -28,7 +28,8 @@ export const DesktopNavbar = () => {
           href="/files/Resume-LaizeFerraz.pdf"
           target="_blank"
           rel="noopener noreferrer"
-          className="p-2 text-base hover:underline hover:decoration-pink-300/70 hover:decoration-2 dark:hover:decoration-pink-500">
+          className="p-2 text-base hover:underline hover:decoration-pink-300/70 hover:decoration-2 dark:hover:decoration-pink-500"
+        >
           Resume
         </a>
         <DarkModeToggle />
