@@ -6,11 +6,11 @@ export default function ProjectsList() {
   return (
     <div>
       <h2 className="mt-10 text-xl">Work</h2>
-      <div className="md:gap-3 lg:flex lg:flex-wrap ">
+      <div className="md:gap-3 lg:flex lg:flex-wrap">
         {projectsList.projects.work.map((project) => (
           <div
             key={project.id}
-            className="hover:scale-80 mt-5 rounded-sm bg-slate-100 p-4 transition duration-300 ease-in-out hover:-translate-y-1 dark:bg-zinc-800 md:max-w-xl lg:max-w-2xl"
+            className="mt-5 rounded-sm bg-slate-100 p-4 transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-80 md:max-w-xl lg:max-w-2xl dark:bg-zinc-800"
           >
             <div className="flex flex-col gap-4 lg:flex-row">
               <Link href={`/projects/${project.id}`} className="shrink-0">
@@ -48,7 +48,7 @@ export default function ProjectsList() {
         {projectsList.projects.personal.map((project) => (
           <div
             key={project.id}
-            className="hover:scale-80 mt-5 rounded-sm bg-slate-100 p-4 transition duration-300 ease-in-out hover:-translate-y-1 dark:bg-zinc-800 md:max-w-xl lg:max-w-2xl"
+            className="mt-5 rounded-sm bg-slate-100 p-4 transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-80 md:max-w-xl lg:max-w-2xl dark:bg-zinc-800"
           >
             <div className="flex flex-col gap-4 lg:flex-row">
               <Link href={`/projects/${project.id}`} className="shrink-0">
