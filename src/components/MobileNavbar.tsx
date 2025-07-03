@@ -9,7 +9,10 @@ type MobileNavbarProps = {
 }
 export const MobileNavbar = ({ isOpen, onClose }: MobileNavbarProps) => {
   return (
-    <nav className="flex w-full items-center justify-between border-b border-gray-200 py-4 lg:hidden">
+    <nav
+      id="mobile-menu"
+      className="flex w-full items-center justify-between border-b border-gray-200 py-4 lg:hidden"
+    >
       <div
         className={`${
           isOpen ? 'translate-x-0' : 'translate-x-full'

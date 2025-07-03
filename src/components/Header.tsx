@@ -27,6 +27,8 @@ export const Header = () => {
           className="mr-5 block cursor-pointer"
           onClick={handleMenuToggle}
           aria-label="Toggle menu"
+          aria-expanded={isMenuOpen}
+          aria-controls="mobile-menu"
         >
           <Menu />
         </button>
