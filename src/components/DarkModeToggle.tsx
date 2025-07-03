@@ -33,6 +33,7 @@ export const DarkModeToggle = () => {
     <button
       onClick={toggleDarkMode}
       className="p-2 text-sm font-medium text-gray-800 dark:text-gray-200"
+      aria-label={isDarkMode ? 'Switch to light mode' : 'Switch to dark mode'}
     >
       {isDarkMode ? <Sun /> : <Moon />}
     </button>

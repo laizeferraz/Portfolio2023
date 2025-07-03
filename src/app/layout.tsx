@@ -24,7 +24,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <link rel="icon" href="/favicon.svg" />
       </head>
       <body
-        className={`${inter.variable} ${tenorSans.variable} font-primary bg-white dark:bg-zinc-900 dark:text-zinc-200`}
+        className={`${inter.variable} ${tenorSans.variable} font-primary bg-white dark:bg-zinc-900 dark:text-white`}
       >
         <Header />
         <main className="container mx-auto px-5">

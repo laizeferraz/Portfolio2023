@@ -29,15 +29,22 @@ export default function Home() {
           <p id="contact" className="mt-5">
             You can find me at various places around the web, including{' '}
             <a href="https://www.linkedin.com/in/laize-ferraz/">
-              <span className="text-blue-800">LinkedIn</span>
+              <span className="font-bold text-blue-800 dark:text-blue-300">
+                LinkedIn
+              </span>
             </a>{' '}
             and{' '}
             <a href="https://github.com/laizeferraz">
-              <span className="text-indigo-800">Github</span>
+              <span className="font-bold text-indigo-800 dark:text-indigo-300">
+                Github
+              </span>
             </a>
             , or send me an{' '}
             <a id="email" href="">
-              <span className="text-purple-800">Email</span>.
+              <span className="font-bold text-purple-800 dark:text-purple-300">
+                Email
+              </span>
+              .
             </a>
           </p>
         </div>

@@ -8,6 +8,8 @@
   --font-secondary: var(--font-logo);
 
   --animate-blob: blob 7s infinite;
+  --animate-running-slide-in: running-slide-in 3s linear 1s infinite;
+  --animate-slide-in: slide-in 3s linear 1s infinite;
 
   @keyframes blob {
     0% {
@@ -21,6 +23,26 @@
     }
     100% {
       transform: translate(0px, 0px) scale(1);
+    }
+  }
+  @keyframes slide-in {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes running-slide-in {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0; 
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
     }
   }
 }
