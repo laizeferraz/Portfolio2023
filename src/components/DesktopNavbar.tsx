@@ -8,27 +8,27 @@ export const DesktopNavbar = () => {
       <div className="flex items-center space-x-4">
         <Link
           href="/"
-          className="p-2 text-base hover:underline hover:decoration-blue-300/70 hover:decoration-2 dark:hover:decoration-blue-500"
+          className="p-2 text-base hover:underline hover:decoration-blue-300/70 hover:decoration-2 dark:hover:decoration-blue-500/50"
         >
           Home
         </Link>
         <Link
           href="/profile"
-          className="p-2 text-base hover:underline hover:decoration-purple-300/70 hover:decoration-2 dark:hover:decoration-purple-500"
+          className="p-2 text-base hover:underline hover:decoration-purple-300/70 hover:decoration-2 dark:hover:decoration-purple-500/50"
         >
           Profile
         </Link>
         <Link
           href="/projects"
-          className="p-2 text-base hover:underline hover:decoration-green-300/70 hover:decoration-2 dark:hover:decoration-green-500"
+          className="p-2 text-base hover:underline hover:decoration-green-300/70 hover:decoration-2 dark:hover:decoration-green-500/50"
         >
           Work
         </Link>
         <a
-          href="/files/Resume-LaizeFerraz.pdf"
+          href="/files/Laize_Ferraz_Resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
-          className="p-2 text-base hover:underline hover:decoration-pink-300/70 hover:decoration-2 dark:hover:decoration-pink-500"
+          className="p-2 text-base hover:underline hover:decoration-pink-300/70 hover:decoration-2 dark:hover:decoration-pink-500/50"
         >
           Resume
         </a>
