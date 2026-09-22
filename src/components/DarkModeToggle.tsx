@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import { BsMoon, BsSun } from 'react-icons/bs'
+import { LuMoon, LuSun } from 'react-icons/lu'
 
 export const DarkModeToggle = () => {
   const [isDarkMode, setIsDarkMode] = useState(false)
@@ -35,7 +35,7 @@ export const DarkModeToggle = () => {
       className="p-2 text-sm font-medium text-gray-800 dark:text-gray-200"
       aria-label={isDarkMode ? 'Switch to light mode' : 'Switch to dark mode'}
     >
-      {isDarkMode ? <BsSun /> : <BsMoon />}
+      {isDarkMode ? <LuSun /> : <LuMoon />}
     </button>
   )
 }

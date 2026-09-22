@@ -1,7 +1,7 @@
 'use client'
 import Link from 'next/link'
 import { DarkModeToggle } from '@/components/DarkModeToggle'
-import { BsX } from 'react-icons/bs'
+import { LuX } from 'react-icons/lu'
 
 type MobileNavbarProps = {
   isOpen: boolean
@@ -22,7 +22,7 @@ export const MobileNavbar = ({ isOpen, onClose }: MobileNavbarProps) => {
           onClick={onClose}
           aria-label="Close menu"
         >
-          <BsX />
+          <LuX />
         </button>
         <ul className="flex flex-col items-center justify-center space-y-4">
           <li>

@@ -1,4 +1,4 @@
-import { BsGithub, BsLinkedin } from 'react-icons/bs'
+import { LuGithub, LuLinkedin } from "react-icons/lu";
 
 export const Social = () => {
   return (
@@ -10,7 +10,7 @@ export const Social = () => {
           rel="noopener noreferrer"
           aria-label="LinkedIn profile"
         >
-          <BsLinkedin className="mb-5" />
+          <LuLinkedin className="mb-5" />
         </a>
         <a
           href="https://github.com/laizeferraz"
@@ -18,7 +18,7 @@ export const Social = () => {
           rel="noopener noreferrer"
           aria-label="GitHub profile"
         >
-          <BsGithub />
+          <LuGithub />
         </a>
       </div>
     </>

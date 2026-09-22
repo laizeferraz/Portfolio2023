@@ -1,6 +1,7 @@
 import Image from 'next/image'
-import { BsAsterisk, BsArrowsFullscreen } from 'react-icons/bs'
+import { LuAsterisk, LuMaximize } from 'react-icons/lu'
 import Link from 'next/link'
+import { BsAsterisk, BsArrowsFullscreen } from 'react-icons/bs'
 
 interface WorkProjectDetailsProps {
   imageIntroSrc: string
@@ -143,10 +144,10 @@ export default function WorkProjectDetails({
         <div className="mb-4">
           <h3 className="mb-5">Video Demonstration</h3>
           <div className="mb-4 flex items-center">
-            <BsAsterisk height={8} width={8} />
+            <LuAsterisk height={8} width={8} />
             <p className="flex items-center text-[10px]">
               Click on the
-              <BsArrowsFullscreen height={15} />
+              <LuMaximize height={15} />
               to play it in fullscreen mode.
             </p>
           </div>
@@ -190,7 +191,7 @@ export default function WorkProjectDetails({
       )}
       {noDemo && (
         <div className="flex items-center justify-center">
-          <BsAsterisk height={12} />
+          <LuAsterisk height={12} />
           <a
             href="https://www.vecteezy.com/free-photos"
             className="text-[10px]"
