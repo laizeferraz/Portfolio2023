@@ -1,4 +1,4 @@
-import { Github, Linkedin } from 'lucide-react'
+import { BsGithub, BsLinkedin } from 'react-icons/bs'
 
 export const Social = () => {
   return (
@@ -10,7 +10,7 @@ export const Social = () => {
           rel="noopener noreferrer"
           aria-label="LinkedIn profile"
         >
-          <Linkedin className="mb-5" />
+          <BsLinkedin className="mb-5" />
         </a>
         <a
           href="https://github.com/laizeferraz"
@@ -18,7 +18,7 @@ export const Social = () => {
           rel="noopener noreferrer"
           aria-label="GitHub profile"
         >
-          <Github />
+          <BsGithub />
         </a>
       </div>
     </>

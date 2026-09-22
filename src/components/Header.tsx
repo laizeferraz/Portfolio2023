@@ -1,6 +1,6 @@
 'use client'
 import Link from 'next/link'
-import { Braces, Menu } from 'lucide-react'
+import { BsBraces, BsMenuButton } from 'react-icons/bs'
 import { useState } from 'react'
 import { DesktopNavbar } from '@/components/DesktopNavbar'
 import { MobileNavbar } from '@/components/MobileNavbar'
@@ -16,7 +16,7 @@ export const Header = () => {
     <header className="mt-5 flex w-full flex-wrap items-start justify-between border-b border-gray-200 py-4 lg:items-center">
       <Link href="/" className="ml-5 flex items-center text-xl">
         Laize
-        <Braces color="#E48AEA" />
+        <BsBraces color="#E48AEA" />
         Ferraz
       </Link>
       <div className="relative hidden flex-col justify-center sm:flex">
@@ -30,7 +30,7 @@ export const Header = () => {
           aria-expanded={isMenuOpen}
           aria-controls="mobile-menu"
         >
-          <Menu />
+          <BsMenuButton />
         </button>
         <MobileNavbar onClose={close} isOpen={isMenuOpen} />
       </div>
