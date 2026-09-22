@@ -8,31 +8,31 @@ const experience: {
   date: string
   website: string
 }[] = [
-  {
-    company: 'Grok Academy',
-    role: 'Software Engineer',
-    date: '2023 - 2024',
-    website: 'https://groklearning.com/',
-  },
-  {
-    company: 'Palo IT',
-    role: 'Software Engineer',
-    date: '2021 - 2023',
-    website: 'https://www.palo-it.com/en-au/',
-  },
-  {
-    company: 'Academy Xi',
-    role: 'Frontend Developer Mentor',
-    date: '2022 - 2022',
-    website: 'https://academyxi.com/',
-  },
-  {
-    company: 'Generation Australia',
-    role: 'Frontend Developer Instructor',
-    date: '2020 - 2021',
-    website: 'https://australia.generation.org/',
-  },
-]
+    {
+      company: 'Grok Academy',
+      role: 'Software Engineer',
+      date: '2023 - 2024',
+      website: 'https://groklearning.com/',
+    },
+    {
+      company: 'Palo IT',
+      role: 'Software Engineer',
+      date: '2021 - 2023',
+      website: 'https://www.palo-it.com/en-au/',
+    },
+    {
+      company: 'Academy Xi',
+      role: 'Frontend Developer Mentor',
+      date: '2022 - 2022',
+      website: 'https://academyxi.com/',
+    },
+    {
+      company: 'Generation Australia',
+      role: 'Frontend Developer Instructor',
+      date: '2020 - 2021',
+      website: 'https://australia.generation.org/',
+    },
+  ]
 
 const skills: string[] = [
   'TypeScript',
